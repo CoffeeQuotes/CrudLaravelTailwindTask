@@ -71,5 +71,8 @@
         @endforeach
     </tbody>
 </table>
+<div class="flex align-center justify-center">
+    {!! $courses->links() !!}
+    </div>
 
 @stop
