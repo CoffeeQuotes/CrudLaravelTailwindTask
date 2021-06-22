@@ -16,7 +16,7 @@ class CourseController extends Controller
     {
         //
        // $courses = Course::latest()->paginate(5);
-        $courses = Course::all()->sortByDesc('created_at');
+        $courses = Course::all();
         return view('pages.courses.index', compact('courses'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
